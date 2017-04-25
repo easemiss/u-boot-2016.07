@@ -1,0 +1,23 @@
+config SYS_DDR_1G
+	bool "1GiB"
+
+config SYS_DDR_2G
+	bool "2GiB"
+
+
+config SYS_BOARD
+	default "dms-ba16"
+
+config SYS_VENDOR
+	default "advantech"
+
+config SYS_SOC
+	default "mx6"
+
+config SYS_CONFIG_NAME
+	string "Board configuration name"
+	default "advantech_dms-ba16"
+	help
+	  This option contains information about board configuration name.
+	  Based on this option include/configs/<CONFIG_SYS_CONFIG_NAME>.h header
+	  will be used for board configuration.
